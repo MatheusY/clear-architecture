@@ -1,4 +1,4 @@
-package escola;
+package br.com.alura.escola.dominio.aluno;
 
 import java.util.InputMismatchException;
 import java.util.Objects;
