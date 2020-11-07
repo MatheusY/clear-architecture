@@ -4,6 +4,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
+import br.com.alura.escola.dominio.PublicadorDeEventos;
 import br.com.alura.escola.dominio.aluno.Aluno;
 import br.com.alura.escola.dominio.aluno.Cpf;
 import br.com.alura.escola.dominio.aluno.RepositorioDeAlunos;
@@ -14,8 +15,8 @@ class MatricularAlunoTest {
 	@Test
 	void alunoDeveriaSerPersistido() {
 		RepositorioDeAlunos repositorio = new RepositorioDeAlunosEmMemoria();
-		
-		MatricularAluno useCase = new MatricularAluno(repositorio);
+		PublicadorDeEventos publicador = new PublicadorDeEventos();
+		MatricularAluno useCase = new MatricularAluno(repositorio, publicador);
 		
 		MatricularAlunoDto dados = new MatricularAlunoDto("Fulano", "42634043864", "matheus.matsubara12@gmail.com");
 		

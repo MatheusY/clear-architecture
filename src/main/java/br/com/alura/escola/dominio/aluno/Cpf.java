@@ -81,5 +81,10 @@ public class Cpf {
 		return numero;
 	}
 	
+	@Override
+	public String toString() {
+		return numero;
+	}
+	
 	
 }

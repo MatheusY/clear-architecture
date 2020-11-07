@@ -28,8 +28,8 @@ public class Aluno {
 		telefones.add(new Telefone(ddd, numero));
 	}
 
-	public String getCpf() {
-		return cpf.getNumero();
+	public Cpf getCpf() {
+		return cpf;
 	}
 
 	public String getNome() {
