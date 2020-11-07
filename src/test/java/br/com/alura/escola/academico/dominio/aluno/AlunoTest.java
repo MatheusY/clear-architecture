@@ -1,16 +1,15 @@
 package br.com.alura.escola.academico.dominio.aluno;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import java.util.List;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import br.com.alura.escola.academico.dominio.aluno.Aluno;
-import br.com.alura.escola.academico.dominio.aluno.Cpf;
-import br.com.alura.escola.academico.dominio.aluno.Email;
-import br.com.alura.escola.academico.dominio.aluno.Telefone;
+import br.com.alura.escola.shared.dominio.Cpf;
 
 class AlunoTest {
 	

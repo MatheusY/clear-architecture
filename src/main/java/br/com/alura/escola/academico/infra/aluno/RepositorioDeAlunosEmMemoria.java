@@ -5,8 +5,8 @@ import java.util.List;
 
 import br.com.alura.escola.academico.dominio.aluno.Aluno;
 import br.com.alura.escola.academico.dominio.aluno.AlunoNaoEncontrado;
-import br.com.alura.escola.academico.dominio.aluno.Cpf;
 import br.com.alura.escola.academico.dominio.aluno.RepositorioDeAlunos;
+import br.com.alura.escola.shared.dominio.Cpf;
 
 public class RepositorioDeAlunosEmMemoria implements RepositorioDeAlunos {
 
@@ -19,7 +19,7 @@ public class RepositorioDeAlunosEmMemoria implements RepositorioDeAlunos {
 
 	@Override
 	public Aluno buscarPorCpf(Cpf cpf) {
-		return matriculados.stream().filter(aluno -> aluno.getCpf().equals(cpf.getNumero())).findFirst()
+		return matriculados.stream().filter(aluno -> aluno.getCpf().toString().equals(cpf.toString())).findFirst()
 				.orElseThrow(() -> new AlunoNaoEncontrado(cpf));
 	}
 

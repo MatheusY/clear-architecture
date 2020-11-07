@@ -2,6 +2,8 @@ package br.com.alura.escola.academico.dominio.aluno;
 
 import java.util.Objects;
 
+import br.com.alura.escola.shared.dominio.Cpf;
+
 public class FabricaDeAluno {
 
 	private Aluno aluno;
